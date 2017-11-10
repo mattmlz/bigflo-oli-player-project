@@ -62,7 +62,7 @@ setTimeout(function(){
 /***********************************
  * b- Keyboard touchs interactions *
  **********************************/
-document.body.onkeyup = function(e){
+document.body.onkeyup = (e) => {
   if(e.keyCode == 32){  //Play and pause with spacebar
     if ($video.paused) {
       $video.play()
@@ -76,8 +76,8 @@ document.body.onkeyup = function(e){
   } else if (e.keyCode == 39) { //Add 5secs to video time with right
     $video.currentTime += 5
   } else if (e.keyCode == 27) { //Exit fullscreen with esc
-    console.log('echap') //Function set in part g-
-    echapFs()
+    console.log('echap') 
+    echapFs() //Function set in part g-
   }
 }
 
