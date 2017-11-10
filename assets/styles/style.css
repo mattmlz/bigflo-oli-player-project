@@ -1,0 +1,165 @@
+/*******************
+* Font Integration * 
+*******************/
+
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('../fonts/cooperhewitt/CooperHewitt-Medium.eot');
+  src: url('../fonts/cooperhewitt/CooperHewitt-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cooperhewitt/CooperHewitt-Medium.woff') format('woff'),
+      url('../fonts/cooperhewitt/CooperHewitt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*******
+* Base * 
+*******/
+
+body {
+  background: #BAE1F3;
+  overflow: hidden;
+}
+
+/**************
+* First frame * 
+**************/
+
+.startScreen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+  will-change: opacity;
+}
+
+.startScreen.loaded {
+  opacity: 1;
+}
+
+/****************** 
+    * PLAYER * 
+******************/
+.headerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-top: -300px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  cursor: inherit;
+  transition: visibility 3s ease-in-out 0s;
+  will-change: visibility;
+}
+
+.player .videoLq {
+  position: relative;
+  width: 700px;
+  border-radius: 0.5em;
+}
+
+.player .controls .buttons .playPause:hover,
+.player .controls .buttons .videoPlayback:hover,
+.player .controls .buttons .videoQuality:hover,
+.player .controls .buttons .volumeBar:hover, 
+.player .controls .buttons .videoSize:hover {
+  cursor: url('../img/cursor-hover.png') 15 15, auto;
+}
+
+.player .controls {
+  width: 700px;
+  height: 75px;
+  position: absolute;
+  top: 62vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: rgba(236, 240, 241, 0.15);
+  opacity: 0;
+  transition: opacity 0.2s ease-in 0s;
+  will-change: opacity;
+  z-index: 2147483648;
+  /* Because Chrome applies a z-index of 2147483647 to video in full screen */
+}
+
+.player .controls .buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.player .buttons .volumeBar {
+  display: flex;
+}
+
+.player .buttons img {
+  width: 25px;
+  height: 25px;
+  padding: 0 10px;
+  opacity: 0.4;
+}
+
+.player .buttons img:hover {
+  opacity: 1;
+}
+
+.player .seekBar {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.player .seekBar .timeBar {
+  width: 600px;
+  height: 15px;
+  background: blue;
+  margin: 0 8px;
+}
+
+.player .controls .seekBar .time {
+  font-family: 'Cooper Hewitt';
+  font-size: 12px;
+  color: #F1F1F1;
+}
+
+.player .controls .seekBar .time .currentTime {
+  float: left;
+}
+
+.player .controls .seekBar .time .totalTime {
+  float: right;
+}
+
+/********** 
+* Usefull * 
+**********/
+
+/* Class which permit to toggle some elements from visible to hidden */
+.isVisible {
+  visibility: visible;
+}
+
+/* Class which permit to toggle some elements from none to flex */
+.isActive {
+  display: flex;
+}
+
+/* Remove controls enabled in full screen by differents navigators*/
+.player video::-webkit-media-controls {display:none !important;}
+.player video::-moz-media-controls {display:none !important;}
+.player video::-ms-media-controls {display:none !important;}
+.player video::-o-media-controls {display:none !important;}
