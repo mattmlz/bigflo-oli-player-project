@@ -20,7 +20,4 @@ Just double-click the file index.html .
 
 **Next features:**
  - Fix bug with HD in Safari (click on HD but video don't save the current time of video and restart)
- - Controls position with esc touch on keyboard
-
-**Contributors :**
- - # bigflo-oli-player-project
+ - Controls exitFullscreen with esc touch on keyboard
