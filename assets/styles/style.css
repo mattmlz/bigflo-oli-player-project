@@ -1,7 +1,6 @@
 /*******************
 * Font Integration * 
 *******************/
-
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('../fonts/cooperhewitt/CooperHewitt-Medium.eot');
@@ -15,7 +14,6 @@
 /*******
 * Base * 
 *******/
-
 body {
   background: #BAE1F3;
   overflow: hidden;
@@ -24,7 +22,6 @@ body {
 /**************
 * First frame * 
 **************/
-
 .startScreen {
   width: 100vw;
   height: 100vh;
@@ -147,7 +144,6 @@ body {
 /********** 
 * Usefull * 
 **********/
-
 /* Class which permit to toggle some elements from visible to hidden */
 .isVisible {
   visibility: visible;
