@@ -63,7 +63,7 @@ setTimeout(function(){
  * b- Keyboard touchs interactions *
  **********************************/
 document.body.onkeyup = (e) => {
-  if(e.keyCode == 32){  //Play and pause with spacebar
+  if (e.keyCode == 32) {  //Play and pause with spacebar
     if ($video.paused) {
       $video.play()
       $stateButton.src = 'assets/img/buttons/pause.svg'
