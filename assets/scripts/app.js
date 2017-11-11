@@ -212,9 +212,9 @@ const enterFs = () => {
     alert ('La version de votre navigateur ne permet pas de mettre la vidéo en plein écran')
   }
 }
-//Enter full screen on click
+//Listen to event when user click on fullscreen button
 $fullScreen.addEventListener('click', () => {
-  if(document.fullscreenElement || document.webkitFullscreenElement) { //to disable full screen
+  if(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) { //to disable full screen
     echapFs()
   } else { //to display video in full screen
     enterFs()
