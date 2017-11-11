@@ -165,6 +165,7 @@ $qualityButton.addEventListener('click', () => {
 /******************
  * g- Full screen *
  *****************/
+//Experimental API so we have to use prefixs
 //Function to exit full screen with prefixs
 const echapFs = () => {
   if (document.exitFullscreen) {
@@ -212,7 +213,6 @@ const enterFs = () => {
   }
 }
 //Enter full screen on click
-//Experimental API so we have to use prefixs
 $fullScreen.addEventListener('click', () => {
   if(document.fullscreenElement || document.webkitFullscreenElement) { //to disable full screen
     echapFs()
