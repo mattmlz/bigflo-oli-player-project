@@ -116,13 +116,23 @@ $volumeIcon.addEventListener('click', (event) => {
 /*******************
  * d- Play & Pause *
  ******************/
+//Function to play the video
+const playVideo = () => {
+  $video.play()
+  $stateButton.src = 'assets/img/buttons/pause.svg'
+}
+
+//Function to pause the video
+const pauseVideo = () => {
+  $video.pause()
+  $stateButton.src = 'assets/img/buttons/play.svg'
+}
+
 $stateButton.addEventListener('click', () => {
   if ($video.paused) {
-    $video.play()
-    $stateButton.src = 'assets/img/buttons/pause.svg'
+    playVideo()
   } else {
-    $video.pause()
-    $stateButton.src = 'assets/img/buttons/play.svg'
+    pauseVideo()
   }
 })
 
