@@ -76,6 +76,8 @@ document.body.onkeyup = (e) => {
   } else if (e.keyCode == 39) { //Add 5secs to video time with right
     $video.currentTime += 5
   } else if (e.keyCode == 27) { //Exit fullscreen with esc
+    e.preventDefault()
+    console.log('echap')
     echapFs() //Function set in part g-
     /* Because this is an experimental feature I don't know how
 to set exitFullscreen so user have to press esc */
