@@ -136,6 +136,13 @@ $stateButton.addEventListener('click', () => {
   }
 })
 
+$video.addEventListener('click', () => {
+  if ($video.paused) {
+    playVideo()
+  } else {
+    pauseVideo()
+  }
+})
 /**********************
  * e- Return to start *
  *********************/
