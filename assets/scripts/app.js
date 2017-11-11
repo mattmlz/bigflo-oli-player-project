@@ -76,8 +76,9 @@ document.body.onkeyup = (e) => {
   } else if (e.keyCode == 39) { //Add 5secs to video time with right
     $video.currentTime += 5
   } else if (e.keyCode == 27) { //Exit fullscreen with esc
-    console.log('echap') 
     echapFs() //Function set in part g-
+    /* Because this is an experimental feature I don't know how
+to set exitFullscreen so user have to press esc */
   }
 }
 
@@ -238,9 +239,15 @@ $fullScreen.addEventListener('click', () => {
   }
 })
 
-//Exit full screen
-/* Because this is an experimental feature I don't know how
-to set exitFullscreen so user have to press esc */
+//Do fullscreen when double click on video
+$video.addEventListener('dblclick', () => {
+  if(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) { //to disable full screen
+    echapFs()
+  } else { //to display video in full screen
+    enterFs()
+  }
+})
+
 
 /************************
  * h- Update video time *
