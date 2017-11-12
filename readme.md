@@ -18,6 +18,10 @@ Please enjoy their music !
  - Lazyloading on brand of the artist before display video
  - Video player with two resolutions
  - Testing experimental feature requestFullscreen and exitFullscreen
+ - Click on volume button to mute the video
+ - Use arrow to add or remove 5 seconds to video time
+ - Press space to play or pause video
+ - Use return button to restart the video
 
 ## Next features:
  - Fix bug with HD in Safari (click on HD but video don't save the current time of video and restart)
