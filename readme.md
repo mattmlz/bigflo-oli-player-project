@@ -5,13 +5,14 @@
 *Credits to Bigflo & Oli - Golden Child*
 
 ## Synopsis
-Bigflo & Oli is a french rap bend. It is composed of Florian "Bigflo" and Olivio "Oli" Ordonez. They released their first album "La Cour des Grandes" in 2015, it is certified gold less than four months after its release then platinum record in France.
+Bigflo & Oli is a french rap bend. It is composed of Florian "Bigflo" and Olivio "Oli" Ordonez. They released their first album "La Cour des Grands" in 2015, it is certified gold less than four months after its release then platinum record in France.
 Their second album entitled "La Vraie Vie", was released on June 23, 2017. After 3 weeks of exploitation, the album is certified gold and platinum disc barely 3 months after its release.
 
 Please enjoy their music !
 
 ## Running
-Just double-click the file index.html .
+ - Download the .zip, unzip it and double click on index.html file
+ - Or you can click [here] (https://mattmlz.github.io/bigflo-oli-player-project/)
 
 ## Features:
  - Lazyloading on brand of the artist before display video
