@@ -12,7 +12,7 @@ Please enjoy their music !
 
 ## Running
  - Download the .zip, unzip it and double click on index.html file
- - Or you can click [here] (https://mattmlz.github.io/bigflo-oli-player-project/)
+ - Or you can click [here] (http://mattmlz.github.io/bigflo-oli-player-project/)
 
 ## Features:
  - Lazyloading on brand of the artist before display video
